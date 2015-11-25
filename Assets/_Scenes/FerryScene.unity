@@ -677,7 +677,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 442970, guid: 860105c16c6c57743a548a8d10795e5f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 25
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 442970, guid: 860105c16c6c57743a548a8d10795e5f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2751,6 +2751,7 @@ MonoBehaviour:
   - {fileID: 193674, guid: 14bb33568627eb34297d52fbe1414c7e, type: 2}
   - {fileID: 117440, guid: 4785840d0ac959742ae01bd1b5fda0c1, type: 2}
   _waitTime: 1
+  waveRunning: 0
 --- !u!1 &1488770795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,26 +2852,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: .5, y: 1}
---- !u!1 &1659024701 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100542, guid: 860105c16c6c57743a548a8d10795e5f, type: 2}
-  m_PrefabInternal: {fileID: 269508091}
---- !u!50 &1659024702
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1659024701}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1765705053
 GameObject:
   m_ObjectHideFlags: 0
