@@ -123,13 +123,16 @@ public class PlacementMouse : MonoBehaviour {
         if (building)
         {
             building = false;
+            _buildWallButton.SetActive(false);
+            _buildTowerButton.SetActive(false);
         }
         else
-         building = true;
-        _buildWallButton.SetActive(true);
-        _buildTowerButton.SetActive(true);
-
-        if (_checkCoins._coinsValue <= 0)
+        {
+            building = true;
+            _buildWallButton.SetActive(true);
+            _buildTowerButton.SetActive(true);
+        }
+        if (_checkCoins._coinsValue == 0)
         {
             building = false;
         }
@@ -138,13 +141,6 @@ public class PlacementMouse : MonoBehaviour {
     {
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-       
-        if (building)
-        {
-            transform.position = gridPos;
-        
-        }
-        else transform.position = new Vector2(-10000, 0);
     }
 
     void HideButtons()
@@ -162,9 +158,10 @@ public class PlacementMouse : MonoBehaviour {
     }
 
     void PlaceInput()
-    {
+    {   
         if (building)
         {
+            transform.position = gridPos;
             isFree = !(Physics2D.OverlapCircle(gridPos, (grid / 2), isTaken));
             if (isFree)
             {
@@ -185,5 +182,6 @@ public class PlacementMouse : MonoBehaviour {
                 }
             }
         }
+        else transform.position = new Vector2(-10000, 0);
     }
 }
