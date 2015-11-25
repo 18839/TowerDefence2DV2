@@ -44,6 +44,7 @@ public class PlacementMouse : MonoBehaviour {
     private GameObject _buildTowerButton;
     private GameObject _dropDown;
     private GameObject _scoreController;
+    private GameObject _findSpawner;
     //GameObjects
 
     //Scripts
@@ -53,8 +54,10 @@ public class PlacementMouse : MonoBehaviour {
 
     void Awake()
     {
+        _findSpawner = GameObject.Find("Spawner");
         _scoreController = GameObject.Find("ScoreController");
         _checkCoins = _scoreController.GetComponent<CoinsController>();
+        _checkWaveRunning = _findSpawner.GetComponent<UnitSpawner>();
     }
 
 
@@ -135,9 +138,11 @@ public class PlacementMouse : MonoBehaviour {
     {
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+       
         if (building)
         {
             transform.position = gridPos;
+        
         }
         else transform.position = new Vector2(-10000, 0);
     }
@@ -148,6 +153,11 @@ public class PlacementMouse : MonoBehaviour {
         {
             _buildWallButton.SetActive(false);
             _buildTowerButton.SetActive(false);
+        }
+        else if (building)
+        {
+            _buildWallButton.SetActive(true);
+            _buildTowerButton.SetActive(true);
         }
     }
 

@@ -7,6 +7,12 @@ public class EnemyHealth : MonoBehaviour {
     public float _Enemyhealth = 100f;
     private GameObject _healthBar;
 
+    void Start()
+    {
+        _healthBar = GameObject.Find("Healthbar");
+        _healthBar.GetComponent<Renderer>().material.color = Color.red;
+    }
+
     void Update()
     {
         DestroyEnemy();
@@ -21,15 +27,17 @@ public class EnemyHealth : MonoBehaviour {
         }
     }
 
-    void DestroyThis()
-    { 
-
-}
-
     void AdjustHealthBar()
     {
         _Enemyhealth -= 50;
-        _healthBar = GameObject.Find("HealthBar");
+
+        if (_Enemyhealth <= 50)
+        {
+            _healthBar = GameObject.Find("Healthbar");
+            _healthBar.GetComponent<Renderer>().material.color = Color.red;
+        }
+        
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -38,10 +46,6 @@ public class EnemyHealth : MonoBehaviour {
         {
             AdjustHealthBar();
             Destroy(other.gameObject);
-
-            
-            
-           
         }
     }
 }
