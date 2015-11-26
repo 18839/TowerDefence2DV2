@@ -203,7 +203,7 @@ public class PlacementMouse : MonoBehaviour {
     {
         if (building)
         {
-            isFree = !(Physics2D.OverlapCircle(gridPos, (grid / 2), isTaken));
+            isFree = !(Physics2D.OverlapCircle(gridPos, (grid / 10), isTaken));
             if (isFree)
             {
                 if (Input.GetButtonDown("Fire1"))
