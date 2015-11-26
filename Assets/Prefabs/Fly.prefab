@@ -29,9 +29,10 @@ GameObject:
   - 114: {fileID: 11421536}
   - 114: {fileID: 11485896}
   - 61: {fileID: 6174934}
+  - 114: {fileID: 11447668}
   m_Layer: 9
   m_Name: Fly
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,8 +103,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbb84e642936c442820c2337ab041b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 442970, guid: 860105c16c6c57743a548a8d10795e5f, type: 2}
+  _target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
   speed: 5
+--- !u!114 &11447668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
 --- !u!114 &11485896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,7 +196,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 442970, guid: 860105c16c6c57743a548a8d10795e5f, type: 2}
+      objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
@@ -191,6 +205,18 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _baseTransform
+      value: 
+      objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193674}

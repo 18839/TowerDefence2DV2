@@ -7,6 +7,9 @@ public class EnemyHealth : MonoBehaviour {
     public float _Enemyhealth = 100f;
     private GameObject _healthBar;
 
+
+    private Color32 _changeColor;
+
     void Start()
     {
         _healthBar = GameObject.Find("Healthbar");
@@ -16,6 +19,7 @@ public class EnemyHealth : MonoBehaviour {
     void Update()
     {
         DestroyEnemy();
+        AdjustHealthBar();
         
     }
 
@@ -29,12 +33,12 @@ public class EnemyHealth : MonoBehaviour {
 
     void AdjustHealthBar()
     {
-        _Enemyhealth -= 50;
-
-        if (_Enemyhealth <= 50)
+       
+        if (_Enemyhealth <= 99)
         {
+            _changeColor = new Color(255,0,0,255);
             _healthBar = GameObject.Find("Healthbar");
-            _healthBar.GetComponent<Renderer>().material.color = Color.red;
+            this._healthBar.GetComponent<Renderer>().material.color = _changeColor;
         }
         
         
@@ -44,7 +48,7 @@ public class EnemyHealth : MonoBehaviour {
     {
         if (other.gameObject.tag=="Bullet")
         {
-            AdjustHealthBar();
+            _Enemyhealth -= 50;
             Destroy(other.gameObject);
         }
     }

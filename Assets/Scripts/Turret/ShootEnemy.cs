@@ -21,9 +21,12 @@ public class ShootEnemy : MonoBehaviour {
     private bool spotEnemy = false;
     //Bool
 
+    Animator anim;
+
 	void Start () 
     {
        InvokeRepeating("FindEnemy", 0, 1f);
+       anim = this.gameObject.GetComponent<Animator>();
 	}
 
 
@@ -48,6 +51,7 @@ public class ShootEnemy : MonoBehaviour {
             if (closestEnemy != null)
             {
                 ShootBullet();
+                Animations();
             }
         
     }
@@ -67,6 +71,19 @@ public class ShootEnemy : MonoBehaviour {
     void ShootBullet()
     {
         SpawnBullets();
+    }
+
+    void Animations()
+    {
+        if (this.gameObject.tag == "Archer")
+        {
+            anim.SetBool("Shoot", true);
+        }
+
+        else if (this.gameObject.tag == "Wizard")
+        {
+            anim.SetBool("Lightning", true);
+        }
     }
      
 }

@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: e0ffbfd21e9c0704eb5776d1e2749f82
+timeCreated: 1448496693
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: boss-spritesheet_0
+    21300002: boss-spritesheet_1
+    21300004: boss-spritesheet_2
+    21300006: boss-spritesheet_3
+    21300008: boss-spritesheet_4
+    21300010: boss-spritesheet_5
+    21300012: boss-spritesheet_6
+    21300014: boss-spritesheet_7
+    21300016: boss-spritesheet_8
+    21300018: boss-spritesheet_9
+    21300020: boss-spritesheet_10
+    21300022: boss-spritesheet_11
+    21300024: boss-spritesheet_12
+    21300026: boss-spritesheet_13
+    21300028: boss-spritesheet_14
+    21300030: boss-spritesheet_15
+    21300032: boss-spritesheet_16
+    21300034: boss-spritesheet_17
+    21300036: boss-spritesheet_18
+    21300038: boss-spritesheet_19
+    21300040: boss-spritesheet_20
+    21300042: boss-spritesheet_21
+    21300044: boss-spritesheet_22
+    21300046: boss-spritesheet_23
+    21300048: boss-spritesheet_24
+    21300050: boss-spritesheet_25
+    21300052: boss-spritesheet_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: boss-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1792
+        width: 440
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1792
+        width: 431
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1792
+        width: 422
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1792
+        width: 413
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1544
+        width: 404
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1544
+        width: 395
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1544
+        width: 386
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1548
+        width: 377
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1048
+        width: 384
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1300
+        width: 374
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1048
+        width: 382
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1300
+        width: 376
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1296
+        width: 379
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1296
+        width: 381
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1048
+        width: 379
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1048
+        width: 377
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 800
+        width: 375
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 800
+        width: 373
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 800
+        width: 379
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 800
+        width: 386
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 552
+        width: 394
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 552
+        width: 402
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 552
+        width: 410
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 561
+        width: 417
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 313
+        width: 425
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 313
+        width: 432
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: boss-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 313
+        width: 440
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

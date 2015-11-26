@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11466474}
   - 58: {fileID: 5885758}
   - 50: {fileID: 5069216}
+  - 114: {fileID: 11441960}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 125086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,6 +61,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .100000001
+--- !u!114 &11441960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
 --- !u!114 &11466474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,8 +111,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: .60537529, b: .691176474, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 74d7fe3b86b4bb243883021a6b29465c, type: 3}
+  m_Color: {r: .760784388, g: .760784388, b: .760784388, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -122,6 +136,39 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: .760784388
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: .760784388
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
+      value: .760784388
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74d7fe3b86b4bb243883021a6b29465c,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _baseTransform
+      value: 
+      objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125086}

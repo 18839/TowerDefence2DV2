@@ -16,7 +16,16 @@ public class PlacementMouse : MonoBehaviour {
 
     [SerializeField]
     private Transform turret;
+
+    [SerializeField]
+    private Transform _archerTransform;
     //Transforms
+
+    [SerializeField]
+    private Transform _wizardTower;
+
+    [SerializeField]
+    private Transform _wizardTransform;
 
     [SerializeField]
     private LayerMask isTaken;
@@ -34,6 +43,8 @@ public class PlacementMouse : MonoBehaviour {
     private bool spawnWall = false;
     [SerializeField]
     private bool spawnTurret = false;
+    [SerializeField]
+    private bool spawnWizard = false;
     //Bool
 
     //GameObjects
@@ -42,6 +53,7 @@ public class PlacementMouse : MonoBehaviour {
     private GameObject _StartBuilding;
     private GameObject _buildWallButton;
     private GameObject _buildTowerButton;
+    private GameObject _buildWizardButton;
     private GameObject _dropDown;
     private GameObject _scoreController;
     private GameObject _findSpawner;
@@ -70,9 +82,12 @@ public class PlacementMouse : MonoBehaviour {
         _buildWallButton.GetComponent<Button>().onClick.AddListener(ChangeWall);
         _buildTowerButton = GameObject.Find("TowerButton");
         _buildTowerButton.GetComponent<Button>().onClick.AddListener(ChangeTower);
+        _buildWizardButton = GameObject.Find("WizardButton");
+        _buildWizardButton.GetComponent<Button>().onClick.AddListener(ChangeWizard);
 
         _buildWallButton.SetActive(false);
         _buildTowerButton.SetActive(false);
+        _buildWizardButton.SetActive(false);
     }
 
 
@@ -98,6 +113,7 @@ public class PlacementMouse : MonoBehaviour {
         }
         else
         {
+            spawnWizard = false;
             spawnTurret = true;
             spawnWall = false;
         }
@@ -112,13 +128,32 @@ public class PlacementMouse : MonoBehaviour {
         else
         {
             spawnTurret = false;
+            spawnWizard = false;
             spawnWall = true;
         }
     }
+
+    void ChangeWizard()
+    {
+        if (spawnWizard)
+        {
+            spawnWizard = false;
+        }
+        else
+        {
+            spawnWizard = true;
+            spawnWall = false;
+            spawnTurret = false;
+        }
+
+    }
+
+
     void ChangeBuild()
     {
         spawnTurret = false;
         spawnWall = false;
+        spawnWizard = false;
 
         if (building)
         {
@@ -128,6 +163,7 @@ public class PlacementMouse : MonoBehaviour {
          building = true;
         _buildWallButton.SetActive(true);
         _buildTowerButton.SetActive(true);
+        _buildWizardButton.SetActive(true);
 
         if (_checkCoins._coinsValue <= 0)
         {
@@ -153,11 +189,13 @@ public class PlacementMouse : MonoBehaviour {
         {
             _buildWallButton.SetActive(false);
             _buildTowerButton.SetActive(false);
+            _buildWizardButton.SetActive(false);
         }
         else if (building)
         {
             _buildWallButton.SetActive(true);
             _buildTowerButton.SetActive(true);
+            _buildWizardButton.SetActive(true);
         }
     }
 
@@ -178,8 +216,16 @@ public class PlacementMouse : MonoBehaviour {
                         
                     else if (spawnTurret)
                     {
+                        Instantiate(_archerTransform, gridPos, Quaternion.identity);
                         Instantiate(turret, gridPos, Quaternion.identity);
+                       
                         _checkCoins.RemoveCoins();
+                    }
+
+                    else if (spawnWizard)
+                    {
+                        Instantiate(_wizardTransform, gridPos, Quaternion.identity);
+                        Instantiate(_wizardTower, gridPos, Quaternion.identity);
                     }
                         
                 }
