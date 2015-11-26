@@ -62,6 +62,8 @@ public class Unit : MonoBehaviour
         }
     }*/
     //maybe for dynamic
+
+ 
     IEnumerator FollowPath()
     {
         Vector3 currentWaypoint = path[0];

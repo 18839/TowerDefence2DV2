@@ -7,7 +7,13 @@ public class UnitSpawner : MonoBehaviour {
     //Transforms
     [SerializeField]
     private GameObject[] _enemyToSpawn;
+    [SerializeField]
+    private GameObject _bossTransform;
     //Transforms
+
+    //Int
+    private int timerSeconds = 10;
+    //Int
 
     //Floats
     [SerializeField]
@@ -43,19 +49,39 @@ public class UnitSpawner : MonoBehaviour {
         _startWave = GameObject.Find("WaveButton");
         _startWave.GetComponent<Button>().onClick.AddListener(InvokeEnemies);
         _waveDuration = 10f;
+        InvokeRepeating("SpawnRepeater", 0, _waitTime);
+       
 	}
 
     void InvokeEnemies()
     {
-        waveRunning = true;
+        SpawnBoss();
+        StartCoroutine("SpawnTimer");
         _waveScript.AddWave();
         spawnPos = transform.position;
-        InvokeRepeating("SpawnRepeater", 0, _waitTime);
+       
     }
-
 
     void SpawnRepeater()
     {
+        if (waveRunning)
         Instantiate(_enemyToSpawn[Random.Range(0, _enemyToSpawn.Length)], new Vector2(spawnPos.x, spawnPos.y), Quaternion.identity);
     }
+
+    void SpawnBoss()
+    {
+        if (waveRunning)
+        Instantiate(_bossTransform, new Vector2(spawnPos.x, spawnPos.y), Quaternion.identity);
+    }
+
+    IEnumerator SpawnTimer()
+    {
+        waveRunning = true;
+        yield return new WaitForSeconds(timerSeconds);
+        waveRunning = false;
+    }
+
+
+
+   
 }
