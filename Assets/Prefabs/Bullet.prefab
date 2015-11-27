@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11466474}
   - 58: {fileID: 5885758}
   - 50: {fileID: 5069216}
-  - 114: {fileID: 11441960}
+  - 114: {fileID: 11410196}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -61,7 +61,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .100000001
---- !u!114 &11441960
+--- !u!114 &11410196
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,11 +69,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 125086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
+  m_Script: {fileID: 11500000, guid: c2e82aebb3d26fd43bd9835089e617b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
-  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &11466474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad35e0d75c7feef4bad79d6dfc516213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletVelocity: 5
 --- !u!212 &21246856
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -169,6 +171,14 @@ Prefab:
       propertyPath: _baseTransform
       value: 
       objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+    - target: {fileID: 0}
+      propertyPath: enemyLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: bulletVelocity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125086}

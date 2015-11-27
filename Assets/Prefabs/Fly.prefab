@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497430}
   - 212: {fileID: 21297672}
+  - 114: {fileID: 11468222}
   m_Layer: 0
   m_Name: Healthbar
   m_TagString: Untagged
@@ -29,7 +30,7 @@ GameObject:
   - 114: {fileID: 11421536}
   - 114: {fileID: 11485896}
   - 61: {fileID: 6174934}
-  - 114: {fileID: 11447668}
+  - 114: {fileID: 11439046}
   m_Layer: 9
   m_Name: Fly
   m_TagString: Enemy
@@ -44,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -27.3154354, y: 7.97425938, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 497430}
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -3, y: 1, z: 0}
   m_LocalScale: {x: 2, y: .100000001, z: 1}
   m_Children: []
   m_Father: {fileID: 425200}
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
   speed: 5
---- !u!114 &11447668
+--- !u!114 &11439046
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,11 +114,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 193674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
+  m_Script: {fileID: 11500000, guid: c2e82aebb3d26fd43bd9835089e617b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
-  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &11468222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab5135fc8b19f4082aa8f3aac02e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11485896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Enemyhealth: 100
+  _healthBar: {fileID: 127034}
 --- !u!212 &21206044
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -148,9 +162,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -176,9 +188,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -217,6 +227,14 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193674}

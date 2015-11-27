@@ -18,9 +18,8 @@ public class Messages : MonoBehaviour {
 	//
 	}
 
-    public IEnumerator RemoveMessage()
+    IEnumerator RemoveMessage()
     {
-        _buildMessages.SetActive(true);
         yield return new WaitForSeconds(2);
         _buildMessages.SetActive(false);
     }

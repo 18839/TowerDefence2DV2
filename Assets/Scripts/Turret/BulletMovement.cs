@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletMovement : MonoBehaviour {
 
     //Floats
+    [SerializeField]
     private float bulletVelocity;
     //Floats
 

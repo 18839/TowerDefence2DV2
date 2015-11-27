@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418876}
   - 212: {fileID: 21227080}
+  - 114: {fileID: 11427886}
   m_Layer: 0
   m_Name: Healthbar
   m_TagString: Untagged
@@ -28,8 +29,8 @@ GameObject:
   - 95: {fileID: 9596900}
   - 114: {fileID: 11442322}
   - 114: {fileID: 11468520}
-  - 114: {fileID: 11425642}
   - 61: {fileID: 6136876}
+  - 114: {fileID: 11472518}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Enemy
@@ -44,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 5, y: .100000001, z: 1}
   m_Children: []
   m_Father: {fileID: 429588}
@@ -92,19 +93,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11425642
+--- !u!114 &11427886
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150536}
+  m_GameObject: {fileID: 108472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
+  m_Script: {fileID: 11500000, guid: bcab5135fc8b19f4082aa8f3aac02e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
-  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
 --- !u!114 &11442322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +129,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Enemyhealth: 1000
+--- !u!114 &11472518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e82aebb3d26fd43bd9835089e617b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &21227080
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -200,6 +213,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

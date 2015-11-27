@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Archer
   - Wizard
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - unwalkable
   - EnemyLayer
-  - 
+  - CamPush
   - 
   - 
   - 

@@ -3,8 +3,10 @@ using System.Collections;
 
 public class ShootEnemy : MonoBehaviour {
 
+    //LayerMasks
     [SerializeField]
     private LayerMask enemyLayer;
+    //LayerMasks
 
     //GameObjects
     [SerializeField]
@@ -16,18 +18,17 @@ public class ShootEnemy : MonoBehaviour {
    private Vector2 bulletSpawnVec;
     //Vector2
 
-    //Bool
-    [SerializeField]
-    private bool spotEnemy = false;
-    //Bool
-
+    //Animator
     Animator anim;
+    //Animator
+
 
 	void Start () 
     {
        InvokeRepeating("FindEnemy", 0, 1f);
        anim = this.gameObject.GetComponent<Animator>();
 	}
+
 
 
 	void FindEnemy()
@@ -62,11 +63,7 @@ public class ShootEnemy : MonoBehaviour {
         bulletToSpawn.GetComponent<BulletMovement>().setTarget(closestEnemy);    
     }
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(this.gameObject.transform.position, 2f);
-    }
+  
 
     void ShootBullet()
     {
@@ -75,14 +72,20 @@ public class ShootEnemy : MonoBehaviour {
 
     void Animations()
     {
-        if (this.gameObject.tag == "Archer")
+        if (this.gameObject.name == "TowerArcher(Clone)")
         {
             anim.SetBool("Shoot", true);
+            anim.SetBool("Idle", false);
         }
 
-        else if (this.gameObject.tag == "Wizard")
+        else if (this.gameObject.name == "Wizard(Clone)")
         {
             anim.SetBool("Lightning", true);
+        }
+
+        else if (this.gameObject.name == "Cannon(Clone)")
+        {
+
         }
     }
      

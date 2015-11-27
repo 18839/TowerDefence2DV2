@@ -5,15 +5,18 @@ public class EnemyHealth : MonoBehaviour {
 
     [SerializeField]
     public float _Enemyhealth = 100f;
+    [SerializeField]
     private GameObject _healthBar;
 
 
+    private float _EnemyHpScaler;
     private Color32 _changeColor;
 
     void Start()
     {
-        _healthBar = GameObject.Find("Healthbar");
+        //_healthBar = GameObject.Find("Healthbar");
         _healthBar.GetComponent<Renderer>().material.color = Color.red;
+        _EnemyHpScaler = (_Enemyhealth / 2);
     }
 
     void Update()
@@ -33,14 +36,7 @@ public class EnemyHealth : MonoBehaviour {
 
     void AdjustHealthBar()
     {
-       
-        if (_Enemyhealth <= 99)
-        {
-            _changeColor = new Color(255,0,0,255);
-            _healthBar = GameObject.Find("Healthbar");
-            this._healthBar.GetComponent<Renderer>().material.color = _changeColor;
-        }
-        
+        _healthBar.transform.localScale = new Vector3((_Enemyhealth / _EnemyHpScaler), 0.15f, 1f);    
         
     }
 

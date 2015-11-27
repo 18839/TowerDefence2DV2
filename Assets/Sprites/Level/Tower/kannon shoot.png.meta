@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: c869a0db848a63447bbcdd4d530d4ece
+timeCreated: 1448556616
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kannon shoot_0
+    21300002: kannon shoot_4
+    21300004: kannon shoot_8
+    21300006: kannon shoot_10
+    21300008: kannon shoot_11
+    21300010: kannon shoot_12
+    21300012: kannon shoot_13
+    21300014: kannon shoot_14
+    21300016: kannon shoot_15
+    21300018: kannon shoot_16
+    21300020: kannon shoot_24
+    21300022: kannon shoot_26
+    21300024: kannon shoot_27
+    21300026: kannon shoot_28
+    21300028: kannon shoot_29
+    21300030: kannon shoot_30
+    21300032: kannon shoot_31
+    21300034: kannon shoot_32
+    21300036: kannon shoot_33
+    21300038: kannon shoot_34
+    21300040: kannon shoot_35
+    21300042: kannon shoot_36
+    21300044: kannon shoot_37
+    21300046: kannon shoot_38
+    21300048: kannon shoot_39
+    21300050: kannon shoot_40
+    21300052: kannon shoot_41
+    21300054: kannon shoot_42
+    21300056: kannon shoot_43
+    21300058: kannon shoot_44
+    21300060: kannon shoot_45
+    21300062: kannon shoot_46
+    21300064: kannon shoot_47
+    21300066: kannon shoot_48
+    21300068: kannon shoot_49
+    21300070: kannon shoot_50
+    21300072: kannon shoot_51
+    21300074: kannon shoot_52
+    21300076: kannon shoot_53
+    21300078: kannon shoot_54
+    21300080: kannon shoot_55
+    21300082: kannon shoot_56
+    21300084: kannon shoot_57
+    21300086: kannon shoot_58
+    21300088: kannon shoot_59
+    21300090: kannon shoot_60
+    21300092: kannon shoot_61
+    21300094: kannon shoot_62
+    21300096: kannon shoot_63
+    21300098: kannon shoot_64
+    21300100: kannon shoot_65
+    21300102: kannon shoot_66
+    21300104: kannon shoot_67
+    21300106: kannon shoot_68
+    21300108: kannon shoot_69
+    21300110: kannon shoot_70
+    21300112: kannon shoot_71
+    21300114: kannon shoot_72
+    21300116: kannon shoot_73
+    21300118: kannon shoot_74
+    21300120: kannon shoot_75
+    21300122: kannon shoot_76
+    21300124: kannon shoot_77
+    21300126: kannon shoot_78
+    21300128: kannon shoot_79
+    21300130: kannon shoot_80
+    21300132: kannon shoot_81
+    21300134: kannon shoot_82
+    21300136: kannon shoot_83
+    21300138: kannon shoot_84
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: kannon shoot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1545
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_4
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1538
+        width: 145
+        height: 246
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_8
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1542
+        width: 140
+        height: 238
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_10
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1540
+        width: 145
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1536
+        width: 145
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_12
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1531
+        width: 145
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_13
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1533
+        width: 145
+        height: 230
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_14
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1536
+        width: 145
+        height: 248
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_15
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1540
+        width: 145
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_16
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1541
+        width: 145
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_24
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1290
+        width: 145
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_26
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1290
+        width: 145
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_27
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1290
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_28
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1290
+        width: 145
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1288
+        width: 165
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_30
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1289
+        width: 145
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_31
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1290
+        width: 145
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_32
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1290
+        width: 145
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_33
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1290
+        width: 145
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_34
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1290
+        width: 140
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1035
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_36
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_37
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_38
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_39
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_40
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_41
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_42
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_43
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1035
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_44
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 1035
+        width: 140
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_46
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_47
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_48
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_49
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_50
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_51
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_52
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_53
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 780
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_54
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 780
+        width: 140
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 525
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_56
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_57
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_58
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_59
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_60
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_61
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_62
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_63
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 525
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_64
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 525
+        width: 140
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_66
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_67
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_68
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_69
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_70
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_71
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_72
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_73
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 270
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_74
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 270
+        width: 140
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 165
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_76
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_77
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_78
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_79
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_80
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_81
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_82
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_83
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 15
+        width: 145
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kannon shoot_84
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 15
+        width: 140
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

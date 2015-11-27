@@ -26,9 +26,28 @@ public class CoinsController : MonoBehaviour {
         _coinsText.GetComponent<Text>().text = " " + _coinsValue;
     }
 
-    public void RemoveCoins()
+    public void RemoveCoinsWiz()
     {
-        CheckCoins();
+        
         _coinsValue -= 500f;
+        CheckCoins();
+    }
+    public void RemoveCoinsWall()
+    {
+        
+        _coinsValue -= 150;
+        CheckCoins();
+    }
+    public void RemoveCoinsArch()
+    {
+        
+        _coinsValue -= 250f;
+        CheckCoins();
+    }
+    public void RemoveCoinsCan()
+    {
+        
+        _coinsValue -= 500f;
+        CheckCoins();
     }
 }

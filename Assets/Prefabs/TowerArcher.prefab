@@ -10,11 +10,11 @@ GameObject:
   - 4: {fileID: 488768}
   - 212: {fileID: 21238632}
   - 95: {fileID: 9523662}
-  - 114: {fileID: 11401644}
   - 114: {fileID: 11420256}
+  - 114: {fileID: 11431164}
   m_Layer: 0
   m_Name: TowerArcher
-  m_TagString: Archer
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 7, z: 0}
   m_LocalScale: {x: .75, y: .75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,19 +48,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11401644
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29991be2ec05efd468882235368e8e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
-  _baseTransform: {fileID: 404226, guid: 9932b51c275d28441ae1c28dd3662141, type: 2}
 --- !u!114 &11420256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -77,6 +64,20 @@ MonoBehaviour:
     m_Bits: 512
   bulletObj: {fileID: 125086, guid: 994fa09b6a0c0ed46b0e721adb049695, type: 2}
   spotEnemy: 0
+--- !u!114 &11431164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e82aebb3d26fd43bd9835089e617b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!212 &21238632
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -143,6 +144,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalScale.y
       value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

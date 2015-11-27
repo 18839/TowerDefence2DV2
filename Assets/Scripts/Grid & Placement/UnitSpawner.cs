@@ -7,6 +7,7 @@ public class UnitSpawner : MonoBehaviour {
     //Transforms
     [SerializeField]
     private GameObject[] _enemyToSpawn;
+    private GameObject[] _checkIfAlive;
     [SerializeField]
     private GameObject _bossTransform;
     //Transforms
@@ -44,28 +45,46 @@ public class UnitSpawner : MonoBehaviour {
 
 	void Start () 
     {
+        _checkIfAlive = GameObject.FindGameObjectsWithTag("Enemy");
         _scoreController = GameObject.Find("ScoreController");
          _waveScript = _scoreController.GetComponent<CheckWave>();
         _startWave = GameObject.Find("WaveButton");
         _startWave.GetComponent<Button>().onClick.AddListener(InvokeEnemies);
         _waveDuration = 10f;
         InvokeRepeating("SpawnRepeater", 0, _waitTime);
+
        
 	}
 
     void InvokeEnemies()
     {
+        
+        StartCoroutine("WaveDuration");
         SpawnBoss();
-        StartCoroutine("SpawnTimer");
         _waveScript.AddWave();
         spawnPos = transform.position;
        
     }
 
+    void CheckIfAlive()
+    {
+        foreach (GameObject enemy in _checkIfAlive)
+        {
+            if (enemy == null)
+            {
+                waveRunning = false;
+            }
+        }
+    }
+
     void SpawnRepeater()
     {
         if (waveRunning)
-        Instantiate(_enemyToSpawn[Random.Range(0, _enemyToSpawn.Length)], new Vector2(spawnPos.x, spawnPos.y), Quaternion.identity);
+        {
+            Instantiate(_enemyToSpawn[Random.Range(0, _enemyToSpawn.Length)], new Vector2(spawnPos.x, spawnPos.y), Quaternion.identity);
+            CheckIfAlive();
+        }
+        
     }
 
     void SpawnBoss()
@@ -74,14 +93,12 @@ public class UnitSpawner : MonoBehaviour {
         Instantiate(_bossTransform, new Vector2(spawnPos.x, spawnPos.y), Quaternion.identity);
     }
 
-    IEnumerator SpawnTimer()
+
+    IEnumerator WaveDuration()
     {
         waveRunning = true;
         yield return new WaitForSeconds(timerSeconds);
         waveRunning = false;
     }
-
-
-
    
 }

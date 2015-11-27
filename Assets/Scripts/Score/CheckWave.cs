@@ -4,28 +4,24 @@ using UnityEngine.UI;
 
 public class CheckWave : MonoBehaviour
 {
-    
+    //GameObject
     private GameObject _waveText;
-    public float _waveValue;
+    //GameObject
 
-    // Use this for initialization
+    //Float
+    public float _waveValue;
+    //Float
+
     void Start()
     {
         _waveValue = 0;
         _waveValue += 1;
-        _waveText = GameObject.Find("ShowWave");
-
-        
+        _waveText = GameObject.Find("ShowWave");  
     }
 
     public void AddWave()
     {
         _waveText.GetComponent<Text>().text = _waveValue + "/10";
         _waveValue += 1;
-    }
-
-    void Update()
-    {
-
     }
 }

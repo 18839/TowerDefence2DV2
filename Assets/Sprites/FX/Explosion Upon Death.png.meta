@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 95d6fc76bbc19674b8ffc04ada04ca0a
+timeCreated: 1448556215
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Explosion Upon Death_0
+    21300002: Explosion Upon Death_1
+    21300004: Explosion Upon Death_2
+    21300006: Explosion Upon Death_3
+    21300008: Explosion Upon Death_4
+    21300010: Explosion Upon Death_5
+    21300012: Explosion Upon Death_6
+    21300014: Explosion Upon Death_7
+    21300016: Explosion Upon Death_8
+    21300018: Explosion Upon Death_9
+    21300020: Explosion Upon Death_10
+    21300022: Explosion Upon Death_11
+    21300024: Explosion Upon Death_12
+    21300026: Explosion Upon Death_13
+    21300028: Explosion Upon Death_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Explosion Upon Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 888
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 888
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 888
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 272
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 688
+        width: 272
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_5
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 688
+        width: 272
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 272
+        height: 245
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_7
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 440
+        width: 272
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_8
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 440
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 216
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 216
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 271
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 18
+        width: 272
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion Upon Death_14
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 20
+        width: 272
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

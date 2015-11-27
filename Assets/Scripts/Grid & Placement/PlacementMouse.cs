@@ -19,13 +19,18 @@ public class PlacementMouse : MonoBehaviour {
 
     [SerializeField]
     private Transform _archerTransform;
-    //Transforms
+    
+    
 
     [SerializeField]
     private Transform _wizardTower;
 
     [SerializeField]
     private Transform _wizardTransform;
+
+    [SerializeField]
+    private Transform _cannonObject;
+    //Transforms
 
     [SerializeField]
     private LayerMask isTaken;
@@ -45,6 +50,8 @@ public class PlacementMouse : MonoBehaviour {
     private bool spawnTurret = false;
     [SerializeField]
     private bool spawnWizard = false;
+    [SerializeField]
+    private bool spawnCannon = false;
     //Bool
 
     //GameObjects
@@ -54,6 +61,7 @@ public class PlacementMouse : MonoBehaviour {
     private GameObject _buildWallButton;
     private GameObject _buildTowerButton;
     private GameObject _buildWizardButton;
+    private GameObject _buildCannonButton;
     private GameObject _dropDown;
     private GameObject _scoreController;
     private GameObject _findSpawner;
@@ -84,10 +92,13 @@ public class PlacementMouse : MonoBehaviour {
         _buildTowerButton.GetComponent<Button>().onClick.AddListener(ChangeTower);
         _buildWizardButton = GameObject.Find("WizardButton");
         _buildWizardButton.GetComponent<Button>().onClick.AddListener(ChangeWizard);
+        _buildCannonButton = GameObject.Find("CannonButton");
+        _buildCannonButton.GetComponent<Button>().onClick.AddListener(ChangeCannon);
 
         _buildWallButton.SetActive(false);
         _buildTowerButton.SetActive(false);
         _buildWizardButton.SetActive(false);
+        _buildCannonButton.SetActive(false);
     }
 
 
@@ -116,6 +127,7 @@ public class PlacementMouse : MonoBehaviour {
             spawnWizard = false;
             spawnTurret = true;
             spawnWall = false;
+            spawnCannon = false;
         }
             
     }
@@ -129,6 +141,7 @@ public class PlacementMouse : MonoBehaviour {
         {
             spawnTurret = false;
             spawnWizard = false;
+            spawnCannon = false;
             spawnWall = true;
         }
     }
@@ -144,16 +157,33 @@ public class PlacementMouse : MonoBehaviour {
             spawnWizard = true;
             spawnWall = false;
             spawnTurret = false;
+            spawnCannon = false;
         }
 
     }
 
+    void ChangeCannon()
+    {
+        if (spawnCannon)
+        {
+            spawnCannon = false;
+        }
+        else
+        {
+            spawnCannon = true;
+            spawnWall = false;
+            spawnTurret = false;
+            spawnWizard = false;
+        }
+
+    }
 
     void ChangeBuild()
     {
         spawnTurret = false;
         spawnWall = false;
         spawnWizard = false;
+        spawnCannon = false;
 
         if (building)
         {
@@ -164,21 +194,21 @@ public class PlacementMouse : MonoBehaviour {
         _buildWallButton.SetActive(true);
         _buildTowerButton.SetActive(true);
         _buildWizardButton.SetActive(true);
+        _buildCannonButton.SetActive(true);
 
-        if (_checkCoins._coinsValue <= 0)
-        {
-            building = false;
-        }
     }
     void CheckMouse()
     {
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-       
-        if (building)
+
+        if (_checkWaveRunning.waveRunning == false)
         {
-            transform.position = gridPos;
-        
+            if (building)
+            {
+                transform.position = gridPos;
+
+            }
         }
         else transform.position = new Vector2(-10000, 0);
     }
@@ -190,12 +220,14 @@ public class PlacementMouse : MonoBehaviour {
             _buildWallButton.SetActive(false);
             _buildTowerButton.SetActive(false);
             _buildWizardButton.SetActive(false);
+            _buildCannonButton.SetActive(false);
         }
         else if (building)
         {
             _buildWallButton.SetActive(true);
             _buildTowerButton.SetActive(true);
             _buildWizardButton.SetActive(true);
+            _buildCannonButton.SetActive(true);
         }
     }
 
@@ -203,31 +235,39 @@ public class PlacementMouse : MonoBehaviour {
     {
         if (building)
         {
-            isFree = !(Physics2D.OverlapCircle(gridPos, (grid / 10), isTaken));
+            isFree = !(Physics2D.OverlapCircle(gridPos, (grid / 2), isTaken));
             if (isFree)
             {
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    if (spawnWall)
+                    Debug.Log(_checkCoins._coinsValue);
+                    if (spawnWall && _checkCoins._coinsValue > 149)
                     {
                         Instantiate(tower1, gridPos, Quaternion.identity);
-                        _checkCoins.RemoveCoins();
+                        _checkCoins.RemoveCoinsWall();
                     }
-                        
-                    else if (spawnTurret)
+
+                    else if (spawnTurret && _checkCoins._coinsValue >= 249)
                     {
                         Instantiate(_archerTransform, gridPos, Quaternion.identity);
                         Instantiate(turret, gridPos, Quaternion.identity);
-                       
-                        _checkCoins.RemoveCoins();
+
+                        _checkCoins.RemoveCoinsArch();
                     }
 
-                    else if (spawnWizard)
+                    else if (spawnWizard && _checkCoins._coinsValue >= 499)
                     {
                         Instantiate(_wizardTransform, gridPos, Quaternion.identity);
                         Instantiate(_wizardTower, gridPos, Quaternion.identity);
+                        _checkCoins.RemoveCoinsWiz();
                     }
-                        
+
+                    else if (spawnCannon && _checkCoins._coinsValue >= 499)
+                    {
+                        Instantiate(_cannonObject, gridPos, Quaternion.identity);
+                        _checkCoins.RemoveCoinsCan();
+                    }
+
                 }
             }
         }
